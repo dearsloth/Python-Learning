@@ -4,7 +4,7 @@
 
 ## 📂 檔案清單與內容說明
 
-### 1. 核心基礎運算 (`start.py`)
+### 1. 核心基礎運算 (`operations_list_tuple.py`)
 此檔案涵蓋了 Python 最基礎且重要的資料操作，包含：
 
 #### 數字運算 (Numbers)
@@ -26,14 +26,14 @@
 
 ---
 
-### 2. 流程控制邏輯 (`stage1.py`)
+### 2. 流程控制邏輯 (`conditionals_loops.py`)
 * **條件判斷:** `if`, `elif`, `else` 邏輯分支。
 * **迴圈結構:** `while` 條件迴圈與 `for` 迭代迴圈。
 * **進階控制語法:** `break`, `continue`, `else (與迴圈搭配)`。
 
 ---
 
-### 3. 函式與參數設定 (`stage2.py`)
+### 3. 函式與參數設定 (`definedfunctions.py`)
 * **函式回傳值 (return) 的差異:** 在 Python 中，return 決定了函式執行完後要「交回」什麼資料
   - 無 return 或僅 return: 函式預設會回傳 None。
   - 自定義 return: 可以回傳固定值、計算結果或表達式。
@@ -45,7 +45,7 @@
 
 ---
 
-### 4. 檔案讀寫(`stage3.py`)
+### 4. 檔案讀寫(`fileIO.py`)
 * **純文字檔案 (.txt):** 
   - 寫入 (w)：建立新檔案或覆寫現有內容。
   讀取 (r)：讀取全文或使用 `for` 迴圈逐行讀取進型運算（如數字加總）。
@@ -68,7 +68,14 @@
 
 ```bash
 # 執行基礎運算單元
-python start.py
+python operations_list_tuple.py
 
 # 執行流程控制單元
-python stage1.py
+python conditionals_loops.py
+
+# 執行函式與參數單元
+python definedfunctions.py
+
+# 執行檔案讀寫
+python fileIO.py
+```
