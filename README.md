@@ -4,7 +4,7 @@
 
 ## 📂 檔案清單與內容說明
 
-### 1. 核心基礎運算 (`operations_list_tuple.py`)
+### 1. 核心基礎運算 (`operations_series.py`)
 此檔案涵蓋了 Python 最基礎且重要的資料操作，包含：
 
 #### 數字運算 (Numbers)
@@ -63,12 +63,43 @@
 
 ---
 
+### 5. 亂數與統計模組應用(`random_statistics.py`)
+* **亂數模組 (random):** 主要用於生成隨機數據與清單操作。
+  - `choice(list)`：隨機選一。
+  - `sample(list, k)`：隨機選多個（不重複）。
+  - `shuffle(list)`：打亂順序（洗牌）。
+  - `uniform(a, b)`：指定範圍隨機浮點數。
+  - `normalvariate(mu, sigma)`：常態分佈亂數（模擬自然數據）。
+* **統計模組 (statistics):** 用於快速分析數據趨勢與離散程度。
+  - 平均數 (`mean`)：計算數值平均。
+  - 中位數 (`median`)：找出中間值，不受極端值影響。
+  - 標準差 (`stdev`)：計算數據離散程度（評估波動）。
+
+---
+
+### 5. Pandas 資料分析基礎(`pandas_module.py`)
+* **Series (一維資料):**
+  - 統計運算：內建 `max()`, `sum()`, `mean()`, `median()` 等。
+  - 元素選取：支援位置索引（如 `[1]`）與自訂標籤（如 `["c"]`）。
+  - 字串處理：透過 `.str` 屬性進行批量操作（如 `lower()`, `contains()`, `replace()`）。
+* **DataFrame (二維表格):**
+  - `shape`: 取得資料列數與欄數 (rows, cols)。
+  - `iloc`: 根據「位置」選取資料（如 `iloc[0,1]`）。
+  - `loc`: 根據「標籤或條件」選取資料（如 `loc["b"]`）。
+  - 新增欄位：直接賦值 `df["New"] = [...]`。
+  - 排名與排序：使用 `rank()` 生成名次，並透過 `sort_values()` 重新整理表單。
+* **資料篩選:** 利用 布林遮罩 (Boolean Mask) 快速過濾出需要的數據。
+
+
+
+---
+
 ## 🚀 如何執行
 確保環境已安裝 Python 3.x，在終端機輸入：
 
 ```bash
 # 執行基礎運算單元
-python operations_list_tuple.py
+python operations_series.py
 
 # 執行流程控制單元
 python conditionals_loops.py
@@ -76,6 +107,13 @@ python conditionals_loops.py
 # 執行函式與參數單元
 python definedfunctions.py
 
-# 執行檔案讀寫
+# 執行檔案讀寫單元
 python fileIO.py
+
+# 執行亂數與統計單元
+python random_statistics.py
+
+# 執行Pandas 資料分析單元
+python pandas_module.py
 ```
+
